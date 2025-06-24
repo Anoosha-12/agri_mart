@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="logo">
+        <img src="./assets/logo2.png" alt="Logo" width="80px" height="80px" />
+      </div>
+      <nav class="nav-buttons">
+        <a href="index.html" class="nav-btn">HOME</a>
+        <a href="veggies.html" class="nav-btn">VEGETABLES</a>
+        <a href="salad.html" class="nav-btn">SALAD</a>
+      </nav>
+    </header>
+
+    <main class="fruits-page">
+      <h1 class="page-title">Fruits</h1>
+
+      <div class="fruits-grid">
+        <div class="fruit-card">
+          <div class="fruit-image">
+            <img src="./assets/fruitsbgg.png" alt="Fresh Apricots" />
+          </div>
+          <h3 class="fruit-name">Apricot</h3>
+          <div class="quantity-section">
+            <span class="qty-label">QTY</span>
+            <input
+              type="number"
+              class="qty-input"
+              value="1"
+              min="1"
+              max="50"
+              placeholder="jj"
+            />
+            <span class="qty-label">KG</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Apricot', this)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="fruit-card">
+          <div class="fruit-image">
+            <img src="./assets/fruitsbgg.png" alt="Fresh Apples" />
+          </div>
+          <h3 class="fruit-name">Apple</h3>
+          <div class="quantity-section">
+            <span class="qty-label">QTY</span>
+            <input
+              type="number"
+              class="qty-input"
+              value="1"
+              min="1"
+              max="50"
+              placeholder="jj"
+            />
+            <span class="qty-label">KG</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Apple', this)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="fruit-card">
+          <div class="fruit-image">
+            <img src="./assets/fruitsbgg.png" alt="Fresh Cherries" />
+          </div>
+          <h3 class="fruit-name">Cherry</h3>
+          <div class="quantity-section">
+            <span class="qty-label">QTY</span>
+            <input
+              type="number"
+              class="qty-input"
+              value="1"
+              min="1"
+              max="50"
+              placeholder="hh"
+            />
+            <span class="qty-label">KG</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Cherry', this)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="fruit-card">
+          <div class="fruit-image">
+            <img src="./assets/fruitsbgg.png" alt="Fresh Mangoes" />
+          </div>
+          <h3 class="fruit-name">Mango</h3>
+          <div class="quantity-section">
+            <span class="qty-label">QTY</span>
+            <input
+              type="number"
+              class="qty-input"
+              value="1"
+              min="1"
+              max="50"
+              placeholder="hh"
+            />
+            <span class="qty-label">KG</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Mango', this)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="bottom-cta">
+        <h2 class="cta-text">Wanna Buy Some Veggies Too?</h2>
+        <a href="veggies.html" class="cta-button">Shop Vegetables</a>
+      </div>
+    </main>
+
+    <!-- Cart Counter -->
+    <div class="cart-counter" onclick="viewCart()">
+      🛒
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Link JS logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
